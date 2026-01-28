@@ -51,11 +51,12 @@ main {
     box-shadow: 0 2px 8px rgba(30,41,59,0.07);
     margin-bottom: 1.5rem;
     overflow: hidden;
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .project-card:hover {
     box-shadow: 0 4px 16px rgba(30,41,59,0.13);
+    transform: scale(1.05);
 }
 
 .project-card img {
@@ -91,6 +92,13 @@ main {
 .project-card a:hover {
     color: #1e40af;
     border-bottom: 2px solid #1e40af;
+}
+
+.click-hint {
+    margin: 0.7rem 0 0 0;
+    color: #2563eb;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .contact {
@@ -138,4 +146,55 @@ footer {
         width: 100%;
         height: 160px;
     }
+}
+
+.graphic-design-card {
+    cursor: pointer;
+}
+
+.graphic-design-card .clickable-image {
+    cursor: pointer;
+}
+
+.graphic-design-card .clickable-image:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close:hover {
+    color: #ccc;
 }

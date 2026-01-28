@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Hunt | Web Design Portfolio</title>
+    <title>John Hunt | Web and Graphic Design Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>John Hunt</h1>
-        <p>Web Design Portfolio</p>
+        <p>Web and Graphic Design Portfolio</p>
     </header>
     <main>
         <section class="intro">
-            <p>Hello! My name is John Hunt and this is my portfolio for web design.</p>
+            <p>Hello! My name is John Hunt and this is my portfolio for web design and graphic design.</p>
         </section>
         <section class="projects">
             <h2>Projects</h2>
+            <h3>Web Design</h3>
             <div class="project-card">
                 <img src="img/Sonic Timeline Photo.jpg" alt="Sonic the Hedgehog Timeline">
                 <div>
@@ -49,6 +50,31 @@
                     <a href="https://daringdeveloper25.github.io/Purity-Pursuit-V2/" target="_blank">View Project</a>
                 </div>
             </div>
+            <h3>Graphic Design</h3>
+            <div class="project-card graphic-design-card">
+                <img src="img/Forgotten Figures Tenzin Norgay.jpg" alt="Graphic Design Project 1" class="clickable-image">
+                <div>
+                    <h3>Forgotten Figures: Tenzing Norgay</h3>
+                    <p>This project involved researching a lesser-known historical figure and designing a poster that highlights their life and contributions. An accompanying image was created based on what they were known for, using varying shades of a single color to maintain visual cohesion.</p>
+                    <p class="click-hint">Click to see more</p>
+                </div>
+            </div>
+            <div class="project-card graphic-design-card">
+                <img src="img/Pierre Curie Forgotten Figures Poster.jpg" alt="Graphic Design Project 2" class="clickable-image">
+                <div>
+                    <h3>Forgotten Figures: Pierre Curie</h3>
+                    <p>After completing the first Forgotten Figures poster, I was inspired to expand the project by researching and designing a second poster on another lesser-known historical figure. Building on the original concept, this piece further explores visual storytelling through focused research and a cohesive color-driven design approach.</p>
+                    <p class="click-hint">Click to see more</p>
+                </div>
+            </div>
+            <div class="project-card graphic-design-card">
+                <img src="img/Animal Card.jpg" alt="Graphic Design Project 3" class="clickable-image">
+                <div>
+                    <h3>Animal Poster Card</h3>
+                    <p>This poster card uses bold color fields and simplified silhouettes to depict an animal in its environment. The composition emphasizes shape, contrast, and playful typography to create a visually engaging scene, while the limited detail and vibrant palette keep the focus on form and mood rather than realism.</p>
+                    <p class="click-hint">Click to see more</p>
+                </div>
+            </div>
         </section>
         <section class="contact">
             <h2>Contact</h2>
@@ -62,6 +88,10 @@
     <footer>
         <p>&copy; 2026 John Hunt</p>
     </footer>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
