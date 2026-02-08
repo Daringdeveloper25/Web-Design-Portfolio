@@ -148,15 +148,18 @@ footer {
     }
 }
 
-.graphic-design-card {
+.graphic-design-card,
+.certificate-card {
     cursor: pointer;
 }
 
-.graphic-design-card .clickable-image {
+.graphic-design-card .clickable-image,
+.certificate-card .clickable-image {
     cursor: pointer;
 }
 
-.graphic-design-card .clickable-image:hover {
+.graphic-design-card .clickable-image:hover,
+.certificate-card .clickable-image:hover {
     opacity: 0.8;
     transition: opacity 0.2s;
 }

@@ -3,9 +3,9 @@
 const modal = document.getElementById('imageModal');
 const modalImage = document.getElementById('modalImage');
 const closeBtn = document.querySelector('.close');
-const graphicDesignCards = document.querySelectorAll('.graphic-design-card');
+const modalCards = document.querySelectorAll('.graphic-design-card, .certificate-card');
 
-graphicDesignCards.forEach(card => {
+modalCards.forEach(card => {
     card.addEventListener('click', () => {
         const img = card.querySelector('.clickable-image');
         modal.classList.add('show');
