@@ -1,3 +1,14 @@
+/* Profile photo placeholder styling */
+.profile-photo {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #333;
+    background: #eee;
+}
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
