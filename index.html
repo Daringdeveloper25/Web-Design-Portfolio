@@ -8,11 +8,16 @@
 </head>
 <body>
     <header>
-        <img src="img/Resume photo 4.jpg" alt="Profile Photo" class="profile-photo">
-        <h1>JEB HUNT</h1>
-        <p>Web Design and Front-End Development</p>
+    <img src="img/Resume photo 4.jpg" alt="Profile Photo" class="profile-photo">
+    <h1>JEB HUNT</h1>
+    <p>Web Design and Front-End Development</p>
+        <div class="tabs">
+        <button class="tab-button active" data-tab="homeTab" id="homeTabButton">Home</button>
+        <button class="tab-button" data-tab="aboutTab" id="aboutTabButton">About</button>
+	    </div>
     </header>
     <main>
+        <div class="tab-content active" id="homeTab">
         <section class="intro">
             <p>Hello! My name is Jeb Hunt and this is my portfolio for web design and front-end development.</p>
         </section>
@@ -102,6 +107,15 @@
                 <li><strong>Email:</strong> <a href="mailto:jebhunt382@gmail.com">jebhunt382@gmail.com</a></li>
                 <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeb-hunt-b164bb2a2/" target="_blank">Click here to view</a></li>
             </ul>
+            </div>
+        </section>
+        <section>
+        <div class="tab-content" id="aboutTab">
+        <h1 id="aboutHeading">About Me</h1>
+        <p id="aboutText">Hi, I’m Jeb Hunt, a web designer and developer with a BFA in Computer Game Design and a minor in Marketing from George Mason University. I enjoy combining design and development to create websites that are visually engaging, easy to navigate, and enjoyable to use.
+
+I have experience working with HTML, CSS, JavaScript, Wix, GitHub Codespaces, Figma, and Adobe design tools. I’m continuing to strengthen my front-end development skills through independent projects and hands-on experience, and I’m currently pursuing opportunities in web design, front-end development, and UI/UX.</p>
+        </div>
         </section>
     </main>
     <footer>

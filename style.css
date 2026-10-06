@@ -212,3 +212,45 @@ footer {
 .close:hover {
     color: #ccc;
 }
+.tabs {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+.tab-content {
+  display: none;
+}
+#aboutHeading {
+    text-align: center;
+}
+#aboutText {
+    font-size: 30px;
+    text-align: center;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.tab-content.active {
+  display: block;
+}
+.tab-button {
+    background-color: #334155;
+    color: #ffffff;
+    width: 140px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.tab-button.active {
+    background-color: #2563eb;
+}
+.tab-button:hover:not(.active) {
+    background-color: #475569;
+}
