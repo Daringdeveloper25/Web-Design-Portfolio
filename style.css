@@ -71,8 +71,8 @@ main {
 }
 
 .project-card img {
-    width: 180px;
-    height: 120px;
+    width: 200px;
+    height: 150px;
     object-fit: cover;
     background: #e5e7eb;
     flex-shrink: 0;
