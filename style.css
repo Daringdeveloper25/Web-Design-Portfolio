@@ -220,6 +220,10 @@ footer {
 .tab-content {
   display: none;
 }
+#introText {
+    text-align: center;
+    font-size: 20px;
+}
 #aboutHeading {
     text-align: center;
 }
